@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Byndr | CRUD Application</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="title">Byndr</h2>
+            </div>
+            <div class="col-md-6 text-right">
+                <h2>Number of work item: <span id="workItemNum"></span></h2>
+            </div>
+        </div>
+        <hr>
+        <div class="row text-right">
+            <div class="col-md-12">
+                <!-- <button class="btn btn-primary">
+                    Upload to google spreadsheet
+                </button> -->
+                <button class="btn btn-primary" id="addNewBtn" onclick="addWorkItem()">
+                    Add new item
+                </button>
+            </div>
+
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-bordered" id="itemTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Work Item</th>
+                            <th>Due Date</th>
+                            <th>No. of Resources Needed</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

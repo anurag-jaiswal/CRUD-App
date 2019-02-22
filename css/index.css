@@ -1,0 +1,19 @@
+body {
+    font-family: 'Montserrat';
+}
+
+.title{
+    color: #c9187a;
+}
+
+.edit{
+    margin: 0px 5px;
+}
+
+.trash{
+    color: red;
+}
+
+.editor{
+    height: 35px;
+}
